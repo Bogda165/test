@@ -8,4 +8,9 @@ public class SuperKnight extends Knight{
 
         ogre.revenge(this);
     }
+
+    @Override
+    public String toString(){
+        return "Super knight has " + this.getEnergy() + " energy";
+    }
 }

@@ -11,6 +11,11 @@ public class BadOgre extends Ogre {
 		knight.setEnergy(0);
 	}
 
+	@Override
+	public String toString(){
+		return "Bad orge is " + ((!getHungry())? "not " : "") + "hungry\n" + "\tenergy : " + getEnergy();
+	}
+
 }
 
 
