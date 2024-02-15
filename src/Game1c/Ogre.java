@@ -1,24 +1,24 @@
-package Game1a;
+package Game1c;
+
 public class Ogre {
 	private boolean hungry;
 	private int energy;
-	
-	void revenge(Knight knight) {
+	public void revenge(Knight knight) {
 		if (energy > knight.getEnergy())
-			 knight.setEnergy((int) (0.9 * knight.energy));
+			knight.setEnergy((int) (0.9 * knight.getEnergy()));
 	}
 
-	void setHungry(boolean _hungry) {
+	public void setHungry(boolean _hungry) {
 		hungry = _hungry;
 	}
-	void setEnergy(int _energy) {
+	public void setEnergy(int _energy) {
 		energy = _energy;
 	}
 
-	boolean getHungry() {
+	public boolean getHungry() {
 		return hungry;
 	}
-	int getEnergy(){
+	public int getEnergy(){
 		return energy;
 	}
 
